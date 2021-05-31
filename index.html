@@ -8,13 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/index.css">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
-    <!-- <style>
-        .swiper-container {
-            width: 600px;
-            height: 300px;
-        }
-    </style> -->
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
 </head>
 
 <body ONCONTEXTMENU="window.event.returnValue=false;">
@@ -23,8 +18,29 @@
     <div class="all" id="app">
 
         <div class="header-wrapper">
+            <h2>簡潔有力的主頁標題</h2>
             <header>
-
+                <div class="left">
+                    <div class="logo-wrapper">
+                        <img src="./image/logo.png" alt="logo">
+                    </div>
+                    <div class="sign">
+                        <div class="sign-Up">立即註冊 สมัคร</div>
+                        <div class="sign-In">登入 เข้าระบบ</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="img-wrapper">
+                        <div class="img"><img src="./image/phone/p1bg.png" alt=""></div>
+                        <div class="img"><img src="./image/phone/banner_light.png" alt=""></div>
+                        <div class="img"><img src="./image/phone/banner_girl.png" alt=""></div>
+                        <div class="img"><img src="./image/phone/banner_hero.png" alt=""></div>
+                        <div class="img"><img src="./image/phone/banner_777.png" alt=""></div>
+                        <div class="img"><img src="./image/phone/banner_blue_light.png" alt=""></div>
+                        <div class="img"><img src="./image/phone/banner_bg.png" alt=""></div>
+                        <div class="img"><img src="./image/phone/banner_samurai.png" alt=""></div>
+                    </div>
+                </div>
             </header>
         </div>
 
@@ -52,27 +68,82 @@
         </div>
         <div class="part2">
             <div class="part2-wrapper-1" :class="{wdisplay:isp2aActive}">
-                <img src="./image/deck/part2/01.png" alt="">
+                <div class="imgandp-wrapper">
+                    <img src="./image/deck/part2/01.png" alt="">
+                    <div class="content-1">
+                        <h2>กีฬา</h2>
+                        <p>เดิมพันบอลออนไลน์ที่ได้มาตรฐานระดับโลก
+                            เรทดีที่สุด รูปแบบการเล่นที่หลากหลาย</p>
+                    </div>
+                    <div class="content-2">
+                        <h2>เกมไพ่</h2>
+                        <p>เกมไพ่ออนไลน์ที่มีเกมให้เลือกมากมายให้เลือก
+                            ป็อกเด้ง ไพ่แคงออนไลน์ น้ำเต้าปูปลา ไฮโล</p>
+                    </div>
+                    <div class="content-3">
+                        <h2>คาสิโน</h2>
+                        <p>คาสิโน บาคาร่า เสือมังกร ไฮโล
+                            ดีลเลอร์สาวสวยสุดเซ็กซี่กับเกมส์คาสิโนออนไลน์สุดฮอต</p>
+                    </div>
+                    <div class="content-4">
+                        <h2>สล็อต</h2>
+                        <p>รวมเกมสล็อตไว้มากที่สุดในเว็บเดียว
+                            สามารถเล่นสล็อตบนมือถือกว่า 1,000 เกม</p>
+                    </div>
+                    <div class="content-5">
+                        <h2>ยิงปลา</h2>
+                        <p>เกมยิงปลาก็ ไม่ยุ่งยาก เข้าถึงได้ง่าย
+                            เหมาะสำหรับผู้เล่นมือใหม่ มีให้เลือกเล่นมากมาย</p>
+                    </div>
+                    <div class="content-6">
+                        <h2>หวยออนไลน์</h2>
+                        <p>หวยออนไลน์ เปิดใหม่ระบบมั่นคง จ่ายสูงที่สุด
+                            สลากกินแบ่งรัฐบาล หวยยี่กี หวยหุ้น</p>
+                    </div>
+                    <div class="contentbox-1" @mouseover="a1" @mouseleave="a1active=flase"></div>
+                    <div class="contentbox-2" @mouseover="a2" @mouseleave="a2active=flase"></div>
+                    <div class="contentbox-3" @mouseover="a3" @mouseleave="a3active=flase"></div>
+                    <div class="contentbox-4" @mouseover="a4" @mouseleave="a4active=flase"></div>
+                    <div class="contentbox-5" @mouseover="a5" @mouseleave="a5active=flase"></div>
+                    <div class="contentbox-6" @mouseover="a6" @mouseleave="a6active=flase"></div>
+                    <div class="your-class2">
+                        <div><img src="./image/phone/gd1.png" alt=""></div>
+                        <div><img src="./image/phone/gd2.png" alt=""></div>
+                        <div><img src="./image/phone/gd3.png" alt=""></div>
+                        <div><img src="./image/phone/gd4.png" alt=""></div>
+                        <div><img src="./image/phone/gd5.png" alt=""></div>
+                        <div><img src="./image/phone/gd6.png" alt=""></div>
+                    </div>
+                    <div class="img">
+                        <img src="./image/phone/gd1.png" alt="" :class="{display:a1active}">
+                        <img src="./image/phone/gd2.png" alt="" :class="{display:a2active}">
+                        <img src="./image/phone/gd3.png" alt="" :class="{display:a3active}">
+                        <img src="./image/phone/gd4.png" alt="" :class="{display:a4active}">
+                        <img src="./image/phone/gd5.png" alt="" :class="{display:a5active}">
+                        <img src="./image/phone/gd6.png" alt="" :class="{display:a6active}">
+                    </div>
+                </div>
             </div>
             <div class="part2-wrapper-2" :class="{wdisplay:isp2bActive}">
-
-                <div class="swiper-container" id="a2">
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide"><img src="./image/deck/part2/w2/p2w2-2.jpg" alt="" /></div>
-                        <div class="swiper-slide"><img src="./image/deck/part2/w2/p2w2-1.jpg" alt="" /></div>
-                        <!-- <div class="swiper-slide"><img src="./image/deck/part2/w2/p2w2-3.jpg" alt="" /></div>
-                            <div class="swiper-slide"><img src="./image/deck/part2/w2/p2w2-4.jpg" alt="" /></div>
-                            <div class="swiper-slide"><img src="./image/deck/part2/w2/p2w2-5.jpg" alt="" /></div>
-                            <div class="swiper-slide"><img src="./image/deck/part2/w2/p2w2-6.jpg" alt="" /></div>
-                            <div class="swiper-slide"><img src="./image/deck/part2/w2/p2w2-7.jpg" alt="" /></div> -->
-                    </div>
-                    <!-- If we need pagination -->
-                    <!-- <div class="swiper-pagination"></div> -->
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev" id="sbp"></div>
-                    <div class="swiper-button-next" id="sbn"></div>
+                <div class="your-class">
+                    <div><img src="./image/deck/part2/w2/p2w2-1.jpg" alt=""></div>
+                    <div><img src="./image/deck/part2/w2/p2w2-2.jpg" alt=""></div>
+                    <div><img src="./image/deck/part2/w2/p2w2-3.jpg" alt=""></div>
+                    <div><img src="./image/deck/part2/w2/p2w2-4.jpg" alt=""></div>
+                    <div><img src="./image/deck/part2/w2/p2w2-5.jpg" alt=""></div>
+                    <div><img src="./image/deck/part2/w2/p2w2-6.jpg" alt=""></div>
+                    <div><img src="./image/deck/part2/w2/p2w2-7.jpg" alt=""></div>
+                    <div><img src="./image/deck/part2/w2/p2w2-8.jpg" alt=""></div>
+                    <div><img src="./image/deck/part2/w2/p2w2-9.jpg" alt=""></div>
+                    <div><img src="./image/deck/part2/w2/p2w2-10.jpg" alt=""></div>
+                    <div><img src="./image/deck/part2/w2/p2w2-11.jpg" alt=""></div>
                 </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur eaque iusto eum delectus
+                    repudiandae dolorum tempora aliquid sapiente soluta. Iusto exercitationem ex voluptates perferendis
+                    error repudiandae dolores beatae. In eos provident corporis atque autem sit iusto temporibus
+                    officiis voluptates, eius eligendi quisquam nesciunt tempora aliquam incidunt doloribus, voluptatum
+                    sint illum nam quos! Illo quas minima voluptatibus debitis excepturi amet.</p>
+
 
             </div>
 
@@ -147,8 +218,6 @@
             </div>
 
         </div>
-
-
 
         <div class="part3">
             <div class="part3-wrapper">
@@ -300,7 +369,7 @@
 
 
         <!-- 手機版本的 app下載 + 註冊教學 -->
-        <!-- <div class="pbg">
+        <div class="pbg">
             <h2>APP下載</h2>
             <div class="app"><img src="./image/phone/app.png" alt=""></div>
             <div class="scWrapper">
@@ -315,7 +384,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <!-- 手機版本 -->
         <div class="pbody">
@@ -323,29 +392,29 @@
                 <h2>簡潔有力的主頁</h2>
                 <div class="img-wrapper">
                     <div class="img"><img src="./image/phone/p1bg.png" alt=""></div>
-                    <div class="img1"><img src="./image/phone/banner_light.png" alt=""></div>
-                    <div class="img2"><img src="./image/phone/banner_girl.png" alt=""></div>
-                    <div class="img3"><img src="./image/phone/banner_hero.png" alt=""></div>
-                    <div class="img4"><img src="./image/phone/banner_777.png" alt=""></div>
-                    <div class="img5"><img src="./image/phone/banner_blue_light.png" alt=""></div>
-                    <div class="img6"><img src="./image/phone/banner_bg.png" alt=""></div>
-                    <div class="img7"><img src="./image/phone/banner_samurai.png" alt=""></div>
+                    <div class="img"><img src="./image/phone/banner_light.png" alt=""></div>
+                    <div class="img"><img src="./image/phone/banner_girl.png" alt=""></div>
+                    <div class="img"><img src="./image/phone/banner_hero.png" alt=""></div>
+                    <div class="img"><img src="./image/phone/banner_777.png" alt=""></div>
+                    <div class="img"><img src="./image/phone/banner_blue_light.png" alt=""></div>
+                    <div class="img"><img src="./image/phone/banner_bg.png" alt=""></div>
+                    <div class="img"><img src="./image/phone/banner_samurai.png" alt=""></div>
                 </div>
                 <div class="sign">
-                    <h3>立即註冊</h3>
+                    <h3>立即註冊 สมัคร</h3>
                 </div>
                 <div class="sign">
-                    <h3>登入</h3>
+                    <h3>登入 เข้าระบบ</h3>
                 </div>
                 <div class="game-wrapper">
                     <div class="game"><img src="./image/phone/game1.png" alt="">
-                        <p>遊戲</p>
+                        <p>เกมส์</p>
                     </div>
                     <div class="game"><img src="./image/phone/game2.png" alt="">
-                        <p>優惠</p>
+                        <p>โปรโมชั่น</p>
                     </div>
                     <div class="game"><img src="./image/phone/game3.png" alt="">
-                        <p>註冊</p>
+                        <p>สมัคร</p>
                     </div>
                     <div class="game"><img src="./image/phone/game4.png" alt="">
                         <p>代理直營</p>
@@ -358,42 +427,48 @@
                 <div class="pd">
                     <div>
                         <img src="./image/phone/gd1.png" alt="">
-                        <p>體育</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p>กีฬา</p>
+                        <p>เดิมพันบอลออนไลน์ที่ได้มาตรฐานระดับโลก
+                            เรทดีที่สุด รูปแบบการเล่นที่หลากหลาย</p>
                         <div class="playnow">playnow</div>
                     </div>
                     <div>
                         <img src="./image/phone/gd2.png" alt="">
-                        <p>真人</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p>คาสิโน</p>
+                        <p>คาสิโน บาคาร่า เสือมังกร ไฮโล
+                            ดีลเลอร์สาวสวยสุดเซ็กซี่กับเกมส์คาสิโนออนไลน์สุดฮอต</p>
                         <div class="playnow">playnow</div>
                     </div>
                 </div>
                 <div class="pd">
                     <div>
                         <img src="./image/phone/gd3.png" alt="">
-                        <p>棋盤</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p>เกมไพ่</p>
+                        <p>เกมไพ่ออนไลน์ที่มีเกมให้เลือกมากมายให้เลือก
+                            ป็อกเด้ง ไพ่แคงออนไลน์ น้ำเต้าปูปลา ไฮโล</p>
                         <div class="playnow">playnow</div>
                     </div>
                     <div>
                         <img src="./image/phone/gd4.png" alt="">
-                        <p>樂透</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p>หวยออนไลน์</p>
+                        <p>หวยออนไลน์ เปิดใหม่ระบบมั่นคง จ่ายสูงที่สุด
+                            สลากกินแบ่งรัฐบาล หวยยี่กี หวยหุ้น</p>
                         <div class="playnow">playnow</div>
                     </div>
                 </div>
                 <div class="pd">
                     <div>
                         <img src="./image/phone/gd5.png" alt="">
-                        <p>捕魚</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p>ยิงปลา</p>
+                        <p>เกมยิงปลาก็ ไม่ยุ่งยาก เข้าถึงได้ง่าย
+                            เหมาะสำหรับผู้เล่นมือใหม่ มีให้เลือกเล่นมากมาย</p>
                         <div class="playnow">playnow</div>
                     </div>
                     <div>
                         <img src="./image/phone/gd6.png" alt="">
-                        <p>電子</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p>สล็อต</p>
+                        <p>รวมเกมสล็อตไว้มากที่สุดในเว็บเดียว
+                            สามารถเล่นสล็อตบนมือถือกว่า 1,000 เกม</p>
                         <div class="playnow">playnow</div>
                     </div>
                 </div>
@@ -501,8 +576,12 @@
 
 
 </body>
-<!-- <script src="./js/swiper-bundle.min.js"></script> -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'
+    integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=='
+    crossorigin='anonymous'></script>
+<script src="./js/slick.min.js"></script>
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="./js/index.js"></script>
 <script>
@@ -511,12 +590,17 @@
         data: {
             isp2aActive: true,
             isp2bActive: false,
-            // isp2bActive: true,
             isp2cActive: false,
             isp2dActive: false,
             isbox1Active: true,
             isbox2Active: false,
             isbox3Active: false,
+            a1active: false,
+            a2active: false,
+            a3active: false,
+            a4active: false,
+            a5active: false,
+            a6active: false,
         },
         methods: {
             a() {
@@ -558,8 +642,46 @@
                 this.isbox2Active = false
                 this.isbox3Active = true
             },
+            a1() {
+                this.a1active = true
+            },
+            a2() {
+                this.a2active = true
+            },
+            a3() {
+                this.a3active = true
+            },
+            a4() {
+                this.a4active = true
+            },
+            a5() {
+                this.a5active = true
+            },
+            a6() {
+                this.a6active = true
+            },
         }
     })
+    $(document).ready(function () {
+        $('.your-class').slick({
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 500,
+            centerMode: true,
+            centerPadding: '60px',
+            fade: true,
+            dots: true,
+        });
+        $('.your-class2').slick({
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            centerMode: true,
+            centerPadding: '60px',
+            fade: true,
+            arrows: false,
+        });
+    });
 </script>
 
 </html>
