@@ -25,8 +25,8 @@
                         <img src="./image/logo.png" alt="logo">
                     </div>
                     <div class="sign">
-                        <div class="sign-Up">立即註冊 สมัคร</div>
-                        <div class="sign-In">登入 เข้าระบบ</div>
+                        <div class="sign-Up">立即註冊 สมัครสมาชิก</div>
+                        <div class="sign-In">登入 เข้าสู่ระบบ</div>
                     </div>
                 </div>
                 <div class="right">
@@ -57,11 +57,11 @@
                 </div>
                 <div class="content" @click="c">
                     <div><img src="./image/deck/part1/d3.png" alt=""></div>
-                    <h3>สมัครสมาชิก</h3>
+                    <h3>แนะนำการใช้งาน</h3>
                 </div>
                 <div class="content" @click="d">
                     <div><img src="./image/deck/part1/d4.png" alt=""></div>
-                    <h3>代理直營</h3>
+                    <h3>ฝ่ายบริการลูกค้า</h3>
                 </div>
 
             </div>
@@ -106,21 +106,21 @@
                     <div class="contentbox-4" @mouseover="a4" @mouseleave="a4active=false"></div>
                     <div class="contentbox-5" @mouseover="a5" @mouseleave="a5active=false"></div>
                     <div class="contentbox-6" @mouseover="a6" @mouseleave="a6active=false"></div>
-                    <div class="your-class2">
+                    <!-- <div class="your-class2">
                         <div><img src="./image/phone/gd1.png" alt=""></div>
                         <div><img src="./image/phone/gd2.png" alt=""></div>
                         <div><img src="./image/phone/gd3.png" alt=""></div>
                         <div><img src="./image/phone/gd4.png" alt=""></div>
                         <div><img src="./image/phone/gd5.png" alt=""></div>
                         <div><img src="./image/phone/gd6.png" alt=""></div>
-                    </div>
+                    </div> -->
                     <div class="img">
                         <img src="./image/phone/gd1.png" alt="" :class="{display:a1active}">
                         <img src="./image/phone/gd2.png" alt="" :class="{display:a2active}">
                         <img src="./image/phone/gd3.png" alt="" :class="{display:a3active}">
-                        <img src="./image/phone/gd4.png" alt="" :class="{display:a4active}">
+                        <img src="./image/phone/gd6.png" alt="" :class="{display:a4active}">
                         <img src="./image/phone/gd5.png" alt="" :class="{display:a5active}">
-                        <img src="./image/phone/gd6.png" alt="" :class="{display:a6active}">
+                        <img src="./image/phone/gd4.png" alt="" :class="{display:a6active}">
                     </div>
                 </div>
             </div>
@@ -155,48 +155,56 @@
                 </div>
                 <div class="img-wrapper" :class="{display:isbox1Active}">
                     <div class="img">
-                        <img src="./image/deck/part2/w3/p2w3-1.png" alt="">
-                        <h2>Lorem, ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <!-- <img src="./image/deck/part2/w3/p2w3-1.png" alt=""> -->
+                        <img src="./image/deck/part2/w3/01.png" alt="">
+                        <h2>สมัครสมาชิก</h2>
+                        <p>กรอกข้อมูลพร้อมตั้งรหัสเข้าเล่น</p>
                     </div>
                     <div class="img">
-                        <img src="./image/deck/part2/w3/p2w3-2.png" alt="">
-                        <h2>Lorem, ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <!-- <img src="./image/deck/part2/w3/p2w3-2.png" alt=""> -->
+                        <img src="./image/deck/part2/w3/02.png" alt="">
+                        <h2>รอรับข้อความ</h2>
+                        <p>กรอกเลข OTP ให้ถูกต้อง</p>
                     </div>
                     <div class="img">
-                        <img src="./image/deck/part2/w3/p2w3-3.png" alt="">
-                        <h2>Lorem, ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <!-- <img src="./image/deck/part2/w3/p2w3-3.png" alt=""> -->
+                        <img src="./image/deck/part2/w3/03.png" alt="">
+                        <h2>ใส่เลขบัญชีและรหัสถอนเงิน</h2>
+                        <p>กรอกเลขบัญชีของคุณพร้อมชื่อให้ถูกต้อง</p>
                     </div>
                 </div>
                 <div class="img-wrapper" :class="{display:isbox2Active}">
                     <div class="img">
-                        <img src="./image/deck/part2/w3/p2w3-4.png" alt="">
-                        <h2>Lorem, ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <!-- <img src="./image/deck/part2/w3/p2w3-4.png" alt=""> -->
+                        <img src="./image/deck/part2/w3/04.png" alt="">
+                        <h2>กด "ฝากเงิน"</h2>
+                        <p>เลือกช่องการเติมเงินที่ต้องการ</p>
                     </div>
                     <div class="img">
-                        <img src="./image/deck/part2/w3/p2w3-5.png" alt="">
-                        <h2>Lorem, ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <!-- <img src="./image/deck/part2/w3/p2w3-5.png" alt=""> -->
+                        <img src="./image/deck/part2/w3/05.png" alt="">
+                        <h2>โอนเงิน</h2>
+                        <p>สามารถ Scan QR Code เพื่อโอน หรือกด "คัดลอก" เลขบัญชี เพื่อโอนได้</p>
                     </div>
                     <div class="img">
-                        <img src="./image/deck/part2/w3/p2w3-6.png" alt="">
-                        <h2>Lorem, ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <!-- <img src="./image/deck/part2/w3/p2w3-6.png" alt=""> -->
+                        <img src="./image/deck/part2/w3/06.png" alt="">
+                        <h2>ยืนยันการทำรายการ</h2>
+                        <p>ส่งรายการฝาก ระบบจะตรวจสอบรายการและเติมเงินทันที</p>
                     </div>
                 </div>
                 <div class="img-wrapper" :class="{display:isbox3Active}">
                     <div class="img">
-                        <img src="./image/deck/part2/w3/p2w3-7.png" alt="">
-                        <h2>Lorem, ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <!-- <img src="./image/deck/part2/w3/p2w3-7.png" alt=""> -->
+                        <img src="./image/deck/part2/w3/07.png" alt="">
+                        <h2>กด "ถอนเงิน"</h2>
+                        <p>"กรอกจำนวนเงินที่ต้องการถอน" และกด "ยืนยัน"</p>
                     </div>
                     <div class="img">
-                        <img src="./image/deck/part2/w3/p2w3-8.png" alt="">
-                        <h2>Lorem, ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <!-- <img src="./image/deck/part2/w3/p2w3-8.png" alt=""> -->
+                        <img src="./image/deck/part2/w3/08.png" alt="">
+                        <h2>รอการทำรายงาน</h2>
+                        <p>รอเงินเข้าภายใน 3 - 10 นาที</p>
                     </div>
                 </div>
             </div>
@@ -223,12 +231,12 @@
             <div class="part3-wrapper">
                 <h2>網站介紹</h2>
                 <div class="pandimg-wrapper">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem incidunt tempore aliquid
-                        molestias! Cupiditate harum incidunt explicabo aspernatur, sed accusantium nostrum ipsum
-                        nesciunt
-                        laboriosam accusamus sint itaque sit minus nemo et ea fuga rem at repellendus saepe enim tenetur
-                        qui
-                        maiores quibusdam? Aperiam, expedita eligendi repellendus sit ipsa nam?</p>
+                    <p>UFAYABO เป็นแพลตฟอร์มความบันเทิงที่ได้รับความนิยมมากที่สุดในเอเชีย เป็นเว็ปตรงไม่ผ่านเอเย่นต์
+                        UFAYABO มีเกมที่หลากหลาย การเดิมพันกีฬา คาสิโนสด สล็อต การแข่งขันกีฬาสัตว์ เกมไพ่
+                        ยิงปลาและล๊อตเตอรี่ มีครบทุกเกมให้ผู้เล่นได้เลือกในเว็ปเดียว
+                        สามารถเล่นได้ทั้งบนเว็บไซค์และบนมือถือ (iOS และ Android) ฝากถอนด้วยตัวเองผ่านระบบอัตโนมัติ
+                        มีฝ่ายบริการลูกค้าให้บริการตลอด 24 ชั่วโมง สมัครง่าย ไม่โอนย้ายกระเป๋า ฝากถอนไม่จำกัด โบนัสสูง
+                        โปรโมชั่นใหม่ๆทุกเดือน</p>
                     <div class="img-wrapper">
                         <img src="./image/phone/p3img1.png" alt="">
                         <img src="./image/phone/p3img2.png" alt="">
@@ -243,7 +251,8 @@
 
         <div class="part4">
             <div class="part4-wrapper">
-                <h2>足球比賽分數查詢</h2>
+                <h2>ผลบอลสด
+                    Live Score</h2>
                 <div class="pandimg-wrapper">
                     <div class="img-wrapper">
                         <img src="./image/phone/soccer_bg_02.png" alt="">
@@ -264,17 +273,11 @@
 
         <div class="part5">
             <div class="part5-wrapper">
-                <h2>APP下載</h2>
+                <h2>APP</h2>
                 <div class="pandimg-wrapper">
                     <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem incidunt tempore aliquid
-                            molestias! Cupiditate harum incidunt explicabo aspernatur, sed accusantium nostrum ipsum
-                            nesciunt
-                            laboriosam accusamus sint itaque sit minus nemo et ea fuga rem at repellendus saepe enim
-                            tenetur
-                            qui
-                            maiores quibusdam? Aperiam, expedita eligendi repellendus sit ipsa nam?</p>
-                        <div class="dl">下載app</div>
+                        <p>แอพพลิเคชั่นคาสิโนที่มีความโดดเด่นด้านภาพกราฟฟิกที่สวยงามกว่าใคร รวมทุกเกมในแอพเดียว ให้คุณเล่นได้ทุกที่ทุกเวลา รองรับทั้ง iOS และ android โหลดเลย</p>
+                        <div class="dl">ดาว์นโหลด</div>
                     </div>
                     <div class="img-wrapper">
                         <img class="pc" src="./image/phone/p51.png" alt="">
@@ -286,7 +289,6 @@
         </div>
 
         <div class="part6">
-
             <div class="logo-wrapper">
                 <div class="logos">
                     <div class="logo"><img src="./image/phone/logo1.png" alt=""></div>
@@ -321,7 +323,7 @@
 
     <!-- 防止手機 safari 版本下滑會有空白 -->
     <div class="poverlay"></div>
-    <div class="pwrapper">
+    <div class="pwrapper" id="phone">
         <!-- 手機版本的header -->
         <div class="pheader-wrapper">
             <div class="pheader">
@@ -330,47 +332,17 @@
         </div>
 
         <!-- 防止手機 safari 版本下滑會有空白 -->
-        <div class="pheaderdiv"></div>
+        <!-- <div class="pheaderdiv"></div> -->
 
 
-        <div class="pbg">
-            <h2>APP下載</h2>
-            <div class="app"><img src="./image/phone/app.png" alt=""></div>
-            <div class="scWrapper">
-                <!-- Slider main container -->
-                <div class="swiper-container" id="a1">
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide"><img src="./image/phone/footc1.png" alt="" /></div>
-                        <div class="swiper-slide"><img src="./image/phone/footc2.png" alt="" /></div>
-                        <div class="swiper-slide"><img src="./image/phone/footc3.png" alt="" /></div>
-                        <div class="swiper-slide"><img src="./image/phone/footc4.png" alt="" /></div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <!-- <div class="swiper-pagination"></div> -->
-                    <!-- If we need navigation buttons -->
-                    <!-- <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div> -->
-                </div>
 
-                <div class="swiper-container" id="a3">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./image/phone/footc1.png" alt="" /></div>
-                        <div class="swiper-slide"><img src="./image/phone/footc2.png" alt="" /></div>
-                        <div class="swiper-slide"><img src="./image/phone/footc3.png" alt="" /></div>
-                        <div class="swiper-slide"><img src="./image/phone/footc4.png" alt="" /></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
 
 
 
 
         <!-- 手機版本的 app下載 + 註冊教學 -->
-        <div class="pbg">
-            <h2>APP下載</h2>
+        <!-- <div class="pbg">
+            <h2>APP</h2>
             <div class="app"><img src="./image/phone/app.png" alt=""></div>
             <div class="scWrapper">
                 <div class="swiper-container">
@@ -384,11 +356,31 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- 手機版本 -->
         <div class="pbody">
-            <div class="p1">
+
+            <!-- 下載教學 -->
+            <div class="pbg" :class="{displayb:db}">
+                <h2>APP</h2>
+                <div class="app"><img src="./image/phone/app.png" alt=""></div>
+                <div class="scWrapper">
+                    <!-- Slider main container -->
+                    <div class="swiper-container" id="a1">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="./image/phone/footc1.png" alt="" /></div>
+                            <div class="swiper-slide"><img src="./image/phone/footc2.png" alt="" /></div>
+                            <div class="swiper-slide"><img src="./image/phone/footc3.png" alt="" /></div>
+                            <div class="swiper-slide"><img src="./image/phone/footc4.png" alt="" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 手機主頁教學 -->
+            <div class="p1" :class="{displayn:dn}">
                 <h2>簡潔有力的主頁</h2>
                 <div class="img-wrapper">
                     <div class="img"><img src="./image/phone/p1bg.png" alt=""></div>
@@ -401,10 +393,10 @@
                     <div class="img"><img src="./image/phone/banner_samurai.png" alt=""></div>
                 </div>
                 <div class="sign">
-                    <h3>立即註冊 สมัคร</h3>
+                    <h3>立即註冊 สมัครสมาชิก</h3>
                 </div>
                 <div class="sign">
-                    <h3>登入 เข้าระบบ</h3>
+                    <h3>登入 เข้าสู่ระบบ</h3>
                 </div>
                 <div class="game-wrapper">
                     <div class="game"><img src="./image/phone/game1.png" alt="">
@@ -414,15 +406,15 @@
                         <p>โปรโมชั่น</p>
                     </div>
                     <div class="game"><img src="./image/phone/game3.png" alt="">
-                        <p>สมัคร</p>
+                        <p>แนะนำการใช้งาน</p>
                     </div>
                     <div class="game"><img src="./image/phone/game4.png" alt="">
-                        <p>代理直營</p>
+                        <p>เฝ่ายบริการลูกค้า</p>
                     </div>
                 </div>
             </div>
 
-            <div class="p2">
+            <div class="p2" :class="{displayn:dn}">
                 <h2>遊戲說明</h2>
                 <div class="pd">
                     <div>
@@ -474,7 +466,7 @@
                 </div>
             </div>
 
-            <div class="p3">
+            <div class="p3" :class="{displayn:dn}">
                 <h2>網站介紹</h2>
                 <div class="img-wrapper">
                     <img src="./image/phone/p3img1.png" alt="">
@@ -490,12 +482,16 @@
                     <div class="img"><img src="./image/phone/p31.png" alt=""></div>
                 </div>
                 <p class="word1">Lorem, ipsum.</p>
-                <p class="word2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In omnis velit minima
-                    blanditiis dolor nihil quod, saepe molestiae harum eaque.</p>
+                <p class="word2">UFAYABO เป็นแพลตฟอร์มความบันเทิงที่ได้รับความนิยมมากที่สุดในเอเชีย
+                    เป็นเว็ปตรงไม่ผ่านเอเย่นต์ UFAYABO มีเกมที่หลากหลาย การเดิมพันกีฬา คาสิโนสด สล็อต
+                    การแข่งขันกีฬาสัตว์ เกมไพ่ ยิงปลาและล๊อตเตอรี่ มีครบทุกเกมให้ผู้เล่นได้เลือกในเว็ปเดียว
+                    สามารถเล่นได้ทั้งบนเว็บไซค์และบนมือถือ (iOS และ Android) ฝากถอนด้วยตัวเองผ่านระบบอัตโนมัติ
+                    มีฝ่ายบริการลูกค้าให้บริการตลอด 24 ชั่วโมง สมัครง่าย ไม่โอนย้ายกระเป๋า ฝากถอนไม่จำกัด โบนัสสูง
+                    โปรโมชั่นใหม่ๆทุกเดือน</p>
             </div>
 
-            <div class="p4">
-                <h2>足球比分</h2>
+            <div class="p4" :class="{displayn:dn}">
+                <h2>ผลบอลสด Live Score</h2>
                 <div class="img-wrapper">
                     <img src="./image/phone/soccer_bg_02.png" alt="">
                     <img src="./image/phone/soccer_bg_03.png" alt="">
@@ -508,20 +504,20 @@
                     similique provident minus hic veniam quaerat voluptatum ipsam?</p>
             </div>
 
-            <div class="p5">
-                <h2>APP下載</h2>
+            <div class="p5" :class="{displayn:dn}">
+                <h2>APP</h2>
                 <div class="img-wrapper">
                     <img src="./image/phone/p51.png" class="pc" alt="">
                     <img src="./image/phone/p52.png" class="ph" alt="">
                     <img src="./image/phone/p53.png" class="coin" alt="">
                 </div>
-                <p class="word1">Lorem, ipsum.</p>
-                <p class="word2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ab, suscipit porro
-                    similique provident minus hic veniam quaerat voluptatum ipsam?</p>
-                <div class="border">下載APP</div>
+                <p class="word1">APP</p>
+                <p class="word2">แอพพลิเคชั่นคาสิโนที่มีความโดดเด่นด้านภาพกราฟฟิกที่สวยงามกว่าใคร รวมทุกเกมในแอพเดียว
+                    ให้คุณเล่นได้ทุกที่ทุกเวลา รองรับทั้ง iOS และ android โหลดเลย</p>
+                <div class="border" @click="openapp">โหลดแอพ</div>
             </div>
 
-            <div class="p6">
+            <div class="p6" :class="{displayn:dn}">
                 <div class="logo-wrapper">
                     <div class="logos">
                         <div class="logo"><img src="./image/phone/logo1.png" alt=""></div>
@@ -554,26 +550,26 @@
 
         </div>
 
-    </div>
 
-    <div class="pfooter">
-        <div class="footerimg"><img src="./image/phone/foot1.png" alt="">
-            <p>下載</p>
-        </div>
-        <div class="footerimg"><img src="./image/phone/foot2.png" alt="">
-            <p>優惠</p>
-        </div>
-        <div class="footerimg"><img src="./image/phone/foot3.png" alt="">
-            <p>首頁</p>
-        </div>
-        <div class="footerimg"><img src="./image/phone/foot4.png" alt="">
-            <p>註冊</p>
-        </div>
-        <div class="footerimg"><img src="./image/phone/foot5.png" alt="">
-            <p>登入</p>
+        
+        <div class="pfooter">
+            <div class="footerimg" @click="openapp"><img src="./image/phone/foot1.png" alt="">
+                <p>App</p>
+            </div>
+            <div class="footerimg"><img src="./image/phone/foot2.png" alt="">
+                <p>โปรโมชั่น</p>
+            </div>
+            <div class="footerimg" @click="openhp"><img src="./image/phone/foot3.png" alt="">
+                <p>หน้าแรก</p>
+            </div>
+            <div class="footerimg"><img src="./image/phone/foot4.png" alt="">
+                <p>สมัคร</p>
+            </div>
+            <div class="footerimg"><img src="./image/phone/foot5.png" alt="">
+                <p>เข้าระบบ</p>
+            </div>
         </div>
     </div>
-
 
 </body>
 <script src="./js/swiper-bundle.min.js"></script>
@@ -583,10 +579,24 @@
 <script src="./js/slick.min.js"></script>
 <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="./js/vue-router3.5.1.js"></script>
 <script src="./js/index.js"></script>
 <script>
-    new Vue({
+
+    // const App = { template: '<div>foo</div>' }
+
+    // const routes = [
+    //     { path: '/app', compnent: App }
+    // ]
+
+    // const router = new VueRouter({
+    //     routes
+    // })
+
+
+    const desk = new Vue({
         el: '#app',
+        // router,
         data: {
             isp2aActive: true,
             isp2bActive: false,
@@ -660,6 +670,25 @@
             a6() {
                 this.a6active = true
             },
+
+        }
+    })
+
+    const phoneapp = new Vue({
+        el: '#phone',
+        data: {
+            db: false,
+            dn: false
+        },
+        methods: {
+            openapp() {
+                this.db = true
+                this.dn = true
+            },
+            openhp(){
+                this.db = false
+                this.dn = false
+            }
         }
     })
     $(document).ready(function () {

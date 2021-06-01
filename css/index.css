@@ -243,22 +243,29 @@
   padding-bottom: 150px;
 }
 .part2 .part2-wrapper-3 .box-wrapper {
-  width: 500px;
+  width: 466px;
   margin: 0 auto;
+  border: 1px solid #AE6ECF;
+  font-size: 0px;
+  border-radius: 60px;
 }
 .part2 .part2-wrapper-3 .box-wrapper .box {
   width: 150px;
   height: 60px;
   line-height: 60px;
   display: inline-block;
-  border: 5px double #AE6ECF;
+  border: 1px solid #AE6ECF;
+  box-sizing: border-box;
+  font-size: 16px;
   text-align: center;
   cursor: pointer;
 }
 .part2 .part2-wrapper-3 .box-wrapper .box1 {
+  margin: 4px;
   border-radius: 60px 0 0 60px;
 }
 .part2 .part2-wrapper-3 .box-wrapper .box3 {
+  margin: 4px;
   border-radius: 0 60px 60px 0;
 }
 .part2 .part2-wrapper-3 .box-wrapper .boxActive {
@@ -276,11 +283,11 @@
 }
 .part2 .part2-wrapper-3 .img-wrapper .img {
   width: 33%;
-  white-space: nowrap;
   text-align: center;
 }
 .part2 .part2-wrapper-3 .img-wrapper .img img {
   width: 50%;
+  width: 75%;
 }
 .part2 .part2-wrapper-3 .img-wrapper .img h2 {
   font-size: 24px;
@@ -436,6 +443,7 @@
 .part5 .part5-wrapper .pandimg-wrapper p {
   width: 450px;
   line-height: 2;
+  margin-bottom: 30px;
 }
 .part5 .part5-wrapper .pandimg-wrapper .img-wrapper {
   width: 593px;
@@ -577,13 +585,18 @@
   background-image: url(../image/phone/gamebg.png);
   background-size: cover;
 }
+.pwrapper .pbody .p1 .game-wrapper .game {
+  width: 25%;
+}
 .pwrapper .pbody .p1 .game-wrapper .game img {
   display: block;
   margin: 0 auto;
   height: 54px;
 }
 .pwrapper .pbody .p1 .game-wrapper .game p {
+  width: 100%;
   text-align: center;
+  white-space: normal;
 }
 .pwrapper .pbody .p2 {
   padding-top: 40px;
@@ -626,6 +639,7 @@
 .pwrapper .pbody .p3 {
   background-image: url(../image/phone/p3bg.png);
   background-position: center;
+  background-size: cover;
   padding-top: 40px;
 }
 .pwrapper .pbody .p3 h2 {
@@ -789,7 +803,7 @@
 .pbg {
   display: none;
   padding-top: 24px;
-  padding-bottom: 44px;
+  padding-bottom: 114px;
   background-image: url(../image/bg.png);
 }
 .pbg h2 {
@@ -804,6 +818,12 @@
   display: block;
   margin: 0 auto;
 }
+.displayb {
+  display: block;
+}
+.displayn {
+  display: none;
+}
 .pfooter {
   width: 100%;
   height: 80px;
@@ -815,6 +835,10 @@
   background-image: url(../image/phone/footbg.png);
   z-index: 10;
   margin-top: 80px;
+}
+.pfooter img {
+  display: block;
+  margin: 0 auto;
 }
 .pfooter p {
   text-align: center;

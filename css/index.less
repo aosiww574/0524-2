@@ -309,24 +309,34 @@
         padding-bottom: 150px;
 
         .box-wrapper {
-            width: 500px;
+            width: 466px;
             margin: 0 auto;
+            border: 1px solid #AE6ECF;
+            font-size: 0px;
+            border-radius: 60px;
 
             .box {
                 width: 150px;
+                // width: 32%;
                 height: 60px;
                 line-height: 60px;
                 display: inline-block;
-                border: 5px double #AE6ECF;
+                // border: 5px double #AE6ECF;
+                border: 1px solid #AE6ECF;
+                box-sizing: border-box;
+                font-size: 16px;
+
                 text-align: center;
                 cursor: pointer;
             }
 
             .box1 {
+                margin: 4px;
                 border-radius: 60px 0 0 60px;
             }
 
             .box3 {
+                margin: 4px;
                 border-radius: 0 60px 60px 0;
             }
 
@@ -347,11 +357,12 @@
 
             .img {
                 width: 33%;
-                white-space: nowrap;
+                // white-space: nowrap;
                 text-align: center;
 
                 img {
                     width: 50%;
+                    width: 75%;
                 }
 
                 h2 {
@@ -542,6 +553,7 @@
             p {
                 width: 450px;
                 line-height: 2;
+                margin-bottom: 30px;
             }
 
             .img-wrapper {
@@ -728,6 +740,7 @@
                 background-size: cover;
 
                 .game {
+                    width: 25%;
                     img {
                         display: block;
                         margin: 0 auto;
@@ -735,7 +748,9 @@
                     }
 
                     p {
+                        width: 100%;
                         text-align: center;
+                        white-space: normal;
                     }
                 }
             }
@@ -793,6 +808,7 @@
         .p3 {
             background-image: url(../image/phone/p3bg.png);
             background-position: center;
+            background-size: cover;
             padding-top: 40px;
 
             h2 {
@@ -995,10 +1011,10 @@
 .pbg {
     // 
     display: none;
-
-    // margin-top: 70px;
+    // height: 100vh;
     padding-top: 24px;
-    padding-bottom: 44px;
+    // padding-bottom: 44px;
+    padding-bottom: 114px;
     background-image: url(../image/bg.png);
 
     h2 {
@@ -1017,6 +1033,14 @@
     }
 }
 
+.displayb {
+    display: block;
+}
+
+.displayn {
+    display: none;
+}
+
 .pfooter {
     width: 100%;
     height: 80px;
@@ -1028,7 +1052,10 @@
     background-image: url(../image/phone/footbg.png);
     z-index: 10;
     margin-top: 80px;
-
+    img{
+        display: block;
+        margin: 0 auto;
+    }
     p {
         text-align: center;
     }
