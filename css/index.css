@@ -75,6 +75,9 @@
   width: 100%;
   position: absolute;
 }
+.header-wrapper header .right .img-wrapper .ani {
+  animation: tremble 2s infinite alternate;
+}
 .part1 {
   background-color: #333;
   background-image: url(../image/phone/gamebg.png);
@@ -397,6 +400,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.part4 .part4-wrapper .pandimg-wrapper .img-wrapper .ani {
+  animation: circle 6s infinite linear;
+}
 .part5 {
   background-image: url(../image/phone/p5bg.png);
   background-size: cover;
@@ -541,6 +547,9 @@
   width: 100%;
   position: absolute;
 }
+.pwrapper .pbody .p1 .img-wrapper .ani {
+  animation: tremble 2s infinite alternate;
+}
 .pwrapper .pbody .p1 .sign {
   width: 320px;
   height: 60px;
@@ -679,6 +688,9 @@
 .pwrapper .pbody .p4 .img-wrapper img {
   position: absolute;
   width: 100%;
+}
+.pwrapper .pbody .p4 .img-wrapper .ani {
+  animation: circle2 6s infinite linear;
 }
 .pwrapper .pbody .p4 .word1 {
   font-size: 24px;
@@ -867,5 +879,57 @@
   }
   100% {
     box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 8px #fff, 0 0 10px #e5bb58, 0 0 8px #e5bb58, 0 0 14px #e5bb58, 0 0 18px #e5bb58, 0 0 22px #e5bb58;
+  }
+}
+@keyframes tremble {
+  0% {
+    left: -3px;
+  }
+  100% {
+    left: 3px;
+  }
+}
+@keyframes circle {
+  0% {
+    top: 50%;
+    left: 50%;
+  }
+  25% {
+    top: 49%;
+    left: 49%;
+  }
+  50% {
+    top: 48%;
+    left: 50%;
+  }
+  75% {
+    top: 49%;
+    left: 51%;
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+  }
+}
+@keyframes circle2 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: -1px;
+    left: -1px;
+  }
+  50% {
+    top: -2px;
+    left: 0;
+  }
+  75% {
+    top: 1px;
+    left: 1px;
+  }
+  100% {
+    top: 0;
+    left: 0;
   }
 }
